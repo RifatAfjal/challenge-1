@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+#mainContainer {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+.container {
+    margin-right: 50px;
+    width: 250px;
+    height: 460px;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+#showInput {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 13px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    user-select: none;
+}
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+.numbers div, .numbers button {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+#backSpace span {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(-45deg);
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.35s linear;
+    user-select: none;
+}
+#random-btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#submit-btn {
+    width: 100%;
+}
+#submit-btn:hover, #random-btn:hover {
+    background-color: #06af1f;
+}
+.numbers div:active,
+#submit-btn:active,
+#random-btn:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* output feild */
+#dataTable {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+#dataTable h3,#dataTable div {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+/* added dynamically */
+.numbers .changeBG {
+    background-color: red;
+}
